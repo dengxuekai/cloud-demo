@@ -1,4 +1,4 @@
-package com.dxk.cloud.demo.provider.api;
+package com.dxk.provider.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

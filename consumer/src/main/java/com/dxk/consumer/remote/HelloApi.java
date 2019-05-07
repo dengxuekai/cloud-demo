@@ -1,4 +1,4 @@
-package com.dxk.cloud.demo.consumer.remote;
+package com.dxk.consumer.remote;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
