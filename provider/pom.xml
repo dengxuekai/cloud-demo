@@ -39,10 +39,6 @@
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>com.caucho</groupId>
-      <artifactId>hessian</artifactId>
-    </dependency>
   </dependencies>
 
 </project>
