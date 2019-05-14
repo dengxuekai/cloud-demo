@@ -18,3 +18,7 @@ eureka:
     health-check-url-path: /provider/health
     status-page-url: /provider/actuator/info
     home-page-url: /provider
+
+ribbon:
+  eager-load:
+    enabled: true

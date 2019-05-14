@@ -19,7 +19,7 @@ info:
 
 eureka:
   instance:
-    hostname: 10.240.244.80
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
