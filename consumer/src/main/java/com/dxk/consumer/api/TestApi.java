@@ -1,6 +1,7 @@
 package com.dxk.consumer.api;
 
 import com.dxk.consumer.remote.HelloApi;
+import com.dxk.consumer.remote.bo.ProviderBO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,11 @@ public class TestApi {
 	@GetMapping()
 	public String test(String name) {
 		return helloApi.hello(name);
+	}
+
+	@GetMapping("entity")
+	public ProviderBO entity(String name) {
+		return helloApi.entity(name);
 	}
 
 	@GetMapping("tt")

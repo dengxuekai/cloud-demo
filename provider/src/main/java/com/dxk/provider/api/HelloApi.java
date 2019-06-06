@@ -1,7 +1,10 @@
 package com.dxk.provider.api;
 
+import com.dxk.provider.api.vo.ProviderBO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.UUID;
 
 /**
  * @author hzdengxuekai
@@ -16,5 +19,11 @@ public class HelloApi {
 	public String hello(String name) {
 		log.info("here cloud request comes, name:{}", name);
 		return "Hello " + name + "!";
+	}
+
+	@GetMapping("entity")
+	public ProviderBO call(String name) {
+		return new ProviderBO(UUID.randomUUID().toString(), name.length());
+
 	}
 }
