@@ -1,0 +1,20 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/dengxuekai/config
+          username:
+          password:
+          search-paths: respo/*
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
