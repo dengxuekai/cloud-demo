@@ -6,7 +6,7 @@ spring:
     name: config-server
   cloud:
     config:
-      label: master
+#      label: master
       server:
         git:
           uri: https://github.com/dengxuekai/config

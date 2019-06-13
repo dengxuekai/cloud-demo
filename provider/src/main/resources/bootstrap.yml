@@ -3,7 +3,7 @@ spring:
     name: provider
   cloud:
     config:
-      label: master
+      label: dev
       profile: A
       discovery:
         enabled: true

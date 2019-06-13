@@ -22,6 +22,8 @@ public class HelloApi {
 
 	@Value("${version}")
 	String apiVersion;
+//    @Value("${spring.profiles.active}")
+//    String profile;
 
 	@Autowired
 	private List<Handler> handlers;
@@ -47,4 +49,9 @@ public class HelloApi {
 	public void handle() {
 		handlers.forEach(Handler::handle);
 	}
+
+//	@GetMapping("profile")
+//    public String profile() {
+//	    return profile;
+//    }
 }
