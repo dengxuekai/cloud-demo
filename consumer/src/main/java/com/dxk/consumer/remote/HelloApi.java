@@ -1,6 +1,7 @@
 package com.dxk.consumer.remote;
 
 import com.dxk.consumer.remote.bo.ProviderBO;
+import com.dxk.consumer.remote.bo.WrongBO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,5 +17,7 @@ public interface HelloApi {
 	String hello(@RequestParam("name") String name);
 
 	@GetMapping("hello/entity")
-	ProviderBO entity(@RequestParam("name") String name);
+	WrongBO entity(@RequestParam("name") String name);
+
+
 }

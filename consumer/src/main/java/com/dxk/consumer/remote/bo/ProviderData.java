@@ -1,24 +1,22 @@
 package com.dxk.consumer.remote.bo;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
 /**
  * @Author dengxuekai
- * @Date 2019-05-23 16:42
+ * @Date 2019-08-20 10:27
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class ProviderBO implements Serializable {
+public class ProviderData implements Serializable {
 
+    private Integer id;
     private String name;
-    private Integer age;
+    private BigDecimal price;
 
     private List<ProviderData> listObj;
 
